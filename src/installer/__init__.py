@@ -3,14 +3,14 @@
 from __future__ import absolute_import, print_function, unicode_literals
 
 from ._pip import (
-    filter_sources, WheelInstaller, EditableInstaller, uninstall, RequirementUninstaller
+    WheelInstaller, EditableInstaller, uninstall, RequirementUninstaller
 )
 from .operations import sync, clean
 from .synchronizer import Cleaner, Synchronizer
 
-__version__ = '0.0.0.dev0'
+__version__ = '0.1.0'
 
 __all__ = [
-    "Cleaner", "clean", "EditableInstaller", "filter_sources", "RequirementUninstaller",
+    "Cleaner", "clean", "EditableInstaller", "RequirementUninstaller",
     "sync", "Synchronizer", "uninstall", "WheelInstaller"
 ]
