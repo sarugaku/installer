@@ -1,1 +1,0 @@
-Fixed an issue which caused uninstall to fail when skipping packages such as ``setuptools``.
