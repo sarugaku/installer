@@ -133,7 +133,7 @@ def _clean(names, venv=None):
         if name in PROTECTED_FROM_CLEAN:
             continue
         with _remove_package(name, venv=venv) as uninst:
-            if uninst.paths:
+            if uninst:
                 cleaned.add(name)
     return cleaned
 
